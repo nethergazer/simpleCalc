@@ -1,0 +1,14 @@
+p "Which form of math would you like to use Add(1) subtrack(2) divide (3) multiply(4)"
+
+do loop
+formula = get.chomp_i
+
+if formula == 1 then
+p "Your are currently doing addition"
+p "enter your first value"
+val_A = get.chomp_i
+p "enter your second value"
+val_B = get.chomp_i
+val_total = val_A + val_B
+p "Total equals"
+p val_total
