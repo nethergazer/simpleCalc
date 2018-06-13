@@ -8,7 +8,6 @@ p "formula_selection is #{formula_selection.class}"
 if formula_selection == "1"
 p "You are currently doing addition"
 p "enter your first value"
-
 val_A = gets.to_i 
 p "enter your second value"
 val_B = gets.to_i 
@@ -36,18 +35,11 @@ elsif formula_selection == "3"
     val_B = gets.to_i
     if formula_selection == "3" && val_B.to_i == 0
         p "Enter another value aside from 0"
+        break
     end
-    break 
-    
-end
-
-
     val_total = val_A.to_i / val_B.to_i
-
     p "total equals"
     p val_total
-
-
 
 else formula_selection == "4"
     p "you are currently doing multiplication"
@@ -58,9 +50,9 @@ else formula_selection == "4"
     val_total = val_A.to_i * val_B.to_i
     p "total equals"
     p val_total 
+
+
 end
 
 end
-
-
 
